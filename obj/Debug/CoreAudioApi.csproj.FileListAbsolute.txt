@@ -1,0 +1,8 @@
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\bin\Debug\CoreAudioApi.exe
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\bin\Debug\CoreAudioApi.pdb
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.Form1.resources
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.Properties.Resources.resources
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.csproj.GenerateResource.cache
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.csproj.CoreCompileInputs.cache
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.exe
+E:\ProjectsVS\CoreAudioApi\CoreAudioApi\obj\Debug\CoreAudioApi.pdb

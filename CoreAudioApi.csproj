@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{592205AE-2BC0-4EBE-A832-1BD8F51775E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoreAudioApi</RootNamespace>
+    <AssemblyName>CoreAudioApi</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolume.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolumeCallback.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolumeChannel.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolumeChannels.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolumeNotificationDelegate.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndpointVolumeStepInformation.cs" />
+    <Compile Include="SystemVolumeControl\AudioEndPointVolumeVolumeRange.cs" />
+    <Compile Include="SystemVolumeControl\AudioMeterInformation.cs" />
+    <Compile Include="SystemVolumeControl\AudioMeterInformationChannels.cs" />
+    <Compile Include="SystemVolumeControl\AudioSessionControl.cs" />
+    <Compile Include="SystemVolumeControl\AudioSessionDisconnectReason.cs" />
+    <Compile Include="SystemVolumeControl\AudioSessionManager.cs" />
+    <Compile Include="SystemVolumeControl\AudioSessionState.cs" />
+    <Compile Include="SystemVolumeControl\AudioVolumeNotificationData.cs" />
+    <Compile Include="SystemVolumeControl\AUDIO_VOLUME_NOTIFICATION_DATA.cs" />
+    <Compile Include="SystemVolumeControl\Blob.cs" />
+    <Compile Include="SystemVolumeControl\CLSCTX.cs" />
+    <Compile Include="SystemVolumeControl\EDataFlow.cs" />
+    <Compile Include="SystemVolumeControl\EDeviceState.cs" />
+    <Compile Include="SystemVolumeControl\EEndpointHardwareSupport.cs" />
+    <Compile Include="SystemVolumeControl\ERole.cs" />
+    <Compile Include="SystemVolumeControl\eStgmAccess.cs" />
+    <Compile Include="SystemVolumeControl\IAudioEndpointVolume.cs" />
+    <Compile Include="SystemVolumeControl\IAudioEndpointVolumeCallback.cs" />
+    <Compile Include="SystemVolumeControl\IAudioMeterInformation.cs" />
+    <Compile Include="SystemVolumeControl\IAudioPeakMeter.cs" />
+    <Compile Include="SystemVolumeControl\IAudioSessionControl2.cs" />
+    <Compile Include="SystemVolumeControl\IAudioSessionEnumerator.cs" />
+    <Compile Include="SystemVolumeControl\IAudioSessionEvents.cs" />
+    <Compile Include="SystemVolumeControl\IAudioSessionManager2.cs" />
+    <Compile Include="SystemVolumeControl\IMMDevice.cs" />
+    <Compile Include="SystemVolumeControl\IMMDeviceCollection.cs" />
+    <Compile Include="SystemVolumeControl\IMMDeviceEnumerator.cs" />
+    <Compile Include="SystemVolumeControl\IMMEndpoint.cs" />
+    <Compile Include="SystemVolumeControl\IPropertyStore.cs" />
+    <Compile Include="SystemVolumeControl\ISimpleAudioVolume.cs" />
+    <Compile Include="SystemVolumeControl\MMDevice.cs" />
+    <Compile Include="SystemVolumeControl\MMDeviceCollection.cs" />
+    <Compile Include="SystemVolumeControl\MMDeviceEnumerator.cs" />
+    <Compile Include="SystemVolumeControl\PKEY.cs" />
+    <Compile Include="SystemVolumeControl\PropertyKey.cs" />
+    <Compile Include="SystemVolumeControl\PropertyStore.cs" />
+    <Compile Include="SystemVolumeControl\PropertyStoreProperty.cs" />
+    <Compile Include="SystemVolumeControl\PropVariant.cs" />
+    <Compile Include="SystemVolumeControl\SessionCollection.cs" />
+    <Compile Include="SystemVolumeControl\SimpleAudioVolume.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
