@@ -34,8 +34,8 @@ namespace CoreAudioApi
             get => CurrentVolume;
             set
             {
-                if (value < 0) device.AudioEndpointVolume.MasterVolumeLevelScalar = 0 / 100.0f;
-                else if (value > 100) device.AudioEndpointVolume.MasterVolumeLevelScalar = 100 / 100.0f;
+                if (value < 0) device.AudioEndpointVolume.MasterVolumeLevelScalar = 0.0f;
+                else if (value > 100) device.AudioEndpointVolume.MasterVolumeLevelScalar = 100.0f;
                 else device.AudioEndpointVolume.MasterVolumeLevelScalar = value / 100.0f;
             }
         }
