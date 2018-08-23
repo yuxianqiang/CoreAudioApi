@@ -1,3 +1,4 @@
-C# win7 win10 ÏµÍ³ÒôÁ¿¿ØÖÆ CoreAudioApiÔ´Âë ÏÔÊ¾·åÖµ
+C# win7 win10 ç³»ç»ŸéŸ³é‡æ§åˆ¶ CoreAudioApiæºç  æ˜¾ç¤ºå³°å€¼
+vs2017 + .net2.0
 
 ![](https://github.com/yuxianqiang/CoreAudioApi/blob/master/Interface.png?raw=true)
